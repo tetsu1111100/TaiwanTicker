@@ -3,7 +3,7 @@
 const DividentdYieldValuation: React.FC = ()=>{
 
     return (
-        <div className=" flex flex-col gap-2 h-full w-full p-4 rounded-md shadow-md text-gray-700 bg-white ">
+        <div className=" flex flex-col gap-2 h-full w-full p-4 rounded-md shadow-md text-gray-700 bg-white max-h-[420px] overflow-auto ">
             <div className=" flex justify-between items-center ">
                 <span className="font-bold">現金殖利率-估值</span>
                 <span className=" flex  gap-1 items-center ">

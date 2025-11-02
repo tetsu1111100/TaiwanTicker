@@ -85,7 +85,7 @@ const CompanyProfile: React.FC<CompanyProfileProps> = (props) => {
     
 
     return (
-        <div className=" flex flex-col gap-2 h-full w-full p-4 rounded-md shadow-md text-gray-700 bg-white ">            
+        <div className=" flex flex-col gap-2 h-full w-full p-4 rounded-md shadow-md text-gray-700 bg-white max-h-[420px] overflow-auto ">            
             <div className=" flex justify-between items-center ">
                 <div>
                     <span className=" font-bold text-lg ">{companyInfo?.companyId} {companyInfo?.companyAbbr}</span>
