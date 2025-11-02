@@ -1,26 +1,18 @@
 
 import './App.css'
-import { useEffect} from 'react';
-import { AiOutlineStock } from "react-icons/ai";
-import { fetchCompanyInfo } from './services/fetchCompanyInfo';
+import CompanyProfile from './features/companyInfo/components/companyProflie';
+
 
 function App() { 
-
-  useEffect(() => {
-    const getData = async () => {
-      try {
-        const data = await fetchCompanyInfo();
-        console.log(data);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-    getData();
-  }, []);
+  
 
   return (
-    <>
-      <p className=" text-red-500 ">Hello world <AiOutlineStock /></p>
+    <>      
+      <div className=" h-screen w-screen flex items-center justify-center bg-gray-200">
+        <div className=" grid grid-cols-3 gap-4 p-10  ">
+          <CompanyProfile companyId="2330" />
+        </div>
+      </div>
     </>
   )
 }
