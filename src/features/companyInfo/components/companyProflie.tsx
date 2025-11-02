@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import dayjs from 'dayjs';
 
-import type { CompanyProfileProps } from '../types/CompanyProfileProps';
+import type { CompanyProfileProps } from '../types/companyProfileProps';
 import type { CompanyInfo } from '../../../types/companyInfo';
 
 import { fetchCompanyInfo } from '../../../services/fetchCompanyInfo';
