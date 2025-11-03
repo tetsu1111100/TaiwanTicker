@@ -4,6 +4,7 @@ import './App.css'
 import CompanyProfile from './features/companyInfo/components/companyProflie';
 import DividentdYieldValuation from './features/portfolio/dividendYieldValuation/components/dividendYieldValuation';
 import PERatioValuation from './features/portfolio/peRatioValuation/components/peRatioValuation';
+import DCFValuation from './features/portfolio/dcfValuation/components/dcfValuation';
 
 function App() { 
   
@@ -15,7 +16,7 @@ function App() {
           <CompanyProfile companyId="2330" />
           <DividentdYieldValuation />
           <PERatioValuation />
-          
+          <DCFValuation />
         </div>
       </div>
     </>

@@ -3,7 +3,7 @@
 const PERatioValuation: React.FC = ()=>{
 
     return (
-        <div className=" flex flex-col gap-2 h-full w-full p-4 rounded-md shadow-md text-gray-700 bg-white max-h-[420px] overflow-auto ">
+        <div className=" flex flex-col gap-2 h-full w-full p-4 rounded-md shadow-md text-gray-700 bg-white max-h-[500px] min-h-[420px] overflow-auto ">
             <div className=" flex justify-between items-center ">
                 <span className="font-bold">本益比(P/E Ratio)-估值</span>
                 <span className=" flex  gap-1 items-center ">
@@ -16,7 +16,7 @@ const PERatioValuation: React.FC = ()=>{
             <div className=" flex flex-col gap-1 ">
                 <div className=" flex flex-col gap-1 ">
                     <span>本益比 = 股價 / 每股盈餘</span>
-                    <span>合理股價 = 每股盈餘 * 合理本益比</span>
+                    <span>合理股價 = 每股盈餘 × 合理本益比</span>
                 </div>
                 <hr className=" my-2 text-gray-200 " />
 
@@ -46,7 +46,7 @@ const PERatioValuation: React.FC = ()=>{
                 <div>
                     <span className=" font-bold ">合理價</span>
                     <span className=" font-bold "> 1184</span>
-                    <span> = 56.31 * 21.02</span>
+                    <span> = 56.31 × 21.02</span>
                 </div>
             </div>
 
