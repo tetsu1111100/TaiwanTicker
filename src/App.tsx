@@ -5,6 +5,7 @@ import CompanyProfile from './features/companyInfo/components/companyProflie';
 import DividentdYieldValuation from './features/portfolio/dividendYieldValuation/components/dividendYieldValuation';
 import PERatioValuation from './features/portfolio/peRatioValuation/components/peRatioValuation';
 import DCFValuation from './features/portfolio/dcfValuation/components/dcfValuation';
+import MultipleOfEarningsValuation from './features/portfolio/multipleOfEarningsValuation/components/multipleOfEarningsValuation';
 
 function App() { 
   
@@ -17,6 +18,7 @@ function App() {
           <DividentdYieldValuation />
           <PERatioValuation />
           <DCFValuation />
+          <MultipleOfEarningsValuation />
         </div>
       </div>
     </>

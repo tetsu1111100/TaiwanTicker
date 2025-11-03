@@ -91,7 +91,7 @@ const DCFValuation: React.FC = ()=>{
             <div>
                 <br />
                 <span className=" text-sm text-gray-500 ">
-                    本益比(P/E Ratio)不會考慮到公司的負債。
+                    WACC可以綜合考慮一家公司的風險，計算出相對應的「客觀合理折現率」。
                 </span>
             </div>
         </div>
