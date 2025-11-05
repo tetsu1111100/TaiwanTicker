@@ -3,11 +3,11 @@ import './App.css'
 
 import Header from './layouts/Header';
 
-import CompanyProfile from './features/companyInfo/components/CompanyProflie';
-import DividentdYieldValuation from './features/portfolio/dividendYieldValuation/components/DividendYieldValuation';
-import PERatioValuation from './features/portfolio/peRatioValuation/components/PERatioValuation';
-import DCFValuation from './features/portfolio/dcfValuation/components/DCFValuation';
-import MultipleOfEarningsValuation from './features/portfolio/multipleOfEarningsValuation/components/MultipleOfEarningsValuation';
+import CompanyProfile from './features/company-info/components/CompanyProflie';
+import DividentdYieldValuation from './features/portfolio/dividend-yield-valuation/components/DividendYieldValuation';
+import PERatioValuation from './features/portfolio/pe-ratio-valuation/components/PERatioValuation';
+import DCFValuation from './features/portfolio/dcf-valuation/components/DCFValuation';
+import MultipleOfEarningsValuation from './features/portfolio/multiple-of-earnings-valuation/components/MultipleOfEarningsValuation';
 
 function App() { 
   
