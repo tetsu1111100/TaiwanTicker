@@ -1,18 +1,21 @@
 
 import './App.css'
 
-import CompanyProfile from './features/companyInfo/components/companyProflie';
-import DividentdYieldValuation from './features/portfolio/dividendYieldValuation/components/dividendYieldValuation';
-import PERatioValuation from './features/portfolio/peRatioValuation/components/peRatioValuation';
-import DCFValuation from './features/portfolio/dcfValuation/components/dcfValuation';
-import MultipleOfEarningsValuation from './features/portfolio/multipleOfEarningsValuation/components/multipleOfEarningsValuation';
+import Header from './layouts/Header';
+
+import CompanyProfile from './features/companyInfo/components/CompanyProflie';
+import DividentdYieldValuation from './features/portfolio/dividendYieldValuation/components/DividendYieldValuation';
+import PERatioValuation from './features/portfolio/peRatioValuation/components/PERatioValuation';
+import DCFValuation from './features/portfolio/dcfValuation/components/DCFValuation';
+import MultipleOfEarningsValuation from './features/portfolio/multipleOfEarningsValuation/components/MultipleOfEarningsValuation';
 
 function App() { 
   
 
   return (
     <>      
-      <div className=" h-screen w-screen flex items-center justify-center bg-gray-200">
+      <div className=" h-screen w-screen flex flex-col items-center justify-center bg-gray-200">
+        <Header />
         <div className=" grid grid-cols-3 gap-4 p-10 overflow-auto h-full w-full ">
           <CompanyProfile companyId="2330" />
           <DividentdYieldValuation />
