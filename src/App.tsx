@@ -1,26 +1,30 @@
 
 import './App.css'
+import { type RouteObject, useRoutes } from 'react-router-dom';
 
 import HomePage from './pages/HomePage';
+import NotFound from './pages/NotFound';
+import StockAnalysis from './pages/StockAnalysis';
 
-/*
-import Header from './layouts/Header';
 
-import CompanyProfile from './features/company-info/components/CompanyProflie';
-import DividentdYieldValuation from './features/portfolio/dividend-yield-valuation/components/DividendYieldValuation';
-import PERatioValuation from './features/portfolio/pe-ratio-valuation/components/PERatioValuation';
-import DCFValuation from './features/portfolio/dcf-valuation/components/DCFValuation';
-import MultipleOfEarningsValuation from './features/portfolio/multiple-of-earnings-valuation/components/MultipleOfEarningsValuation';
-*/
+//路由定義
+const routerConfig: RouteObject[] = [
+  { path: '/', element: <HomePage /> },
+  { path: '/stock-analysis', element: <StockAnalysis /> },
+  { path: '/stock-analysis/:stockSymbol', element: <StockAnalysis /> },
+  { path:"*", element:<NotFound />}
+];
+
+
 
 
 function App() { 
+  const element = useRoutes(routerConfig);
   
-
   return (
     <>      
       <div className=" h-screen w-screen flex flex-col items-center justify-center bg-gray-200">
-        <HomePage />
+        {element}
       </div>      
     </>
   )
@@ -28,19 +32,6 @@ function App() {
 
 export default App
 
-
-/*
-<div className=" h-screen w-screen flex flex-col items-center justify-center bg-gray-200">
-  <Header />
-  <div className=" grid grid-cols-3 gap-4 p-10 overflow-auto h-full w-full ">
-    <CompanyProfile companyId="2330" />
-    <DividentdYieldValuation />
-    <PERatioValuation />
-    <DCFValuation />
-    <MultipleOfEarningsValuation />
-  </div>
-</div>
-*/
 
 
 

@@ -1,6 +1,9 @@
 
+import { useStockAnalysis } from '../../../context/StockAnalysisContext';
 
 const DCFValuation: React.FC = ()=>{
+    const stockAnalysisData = useStockAnalysis();
+    //console.log("stockAnalysisData:", stockAnalysisData);
 
     return (
         <div className=" flex flex-col gap-2 h-full w-full p-4 rounded-md shadow-md text-gray-700 bg-white max-h-[500px] min-h-[420px] overflow-auto ">

@@ -21,7 +21,7 @@ const CompanyProfile: React.FC<CompanyProfileProps> = (props) => {
         }
         };
         getCompanyInfo();
-    }, []);
+    }, [props]);
 
     const handleFollowClick = () => {
         // Handle follow button click
